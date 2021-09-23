@@ -16,3 +16,7 @@ def blog(request):
 def blogDetail(request):
     template_name = 'pages/blog-detail.html'
     return render(request, template_name)
+
+def services(request):
+    template_name = 'pages/services.html'
+    return render(request, template_name) 

@@ -7,5 +7,5 @@ urlpatterns = [
     path('about-us', aboutUs, name='about-us'),
     path('blog-grid', blog, name='blog-grid'),
     path('blog-detail', blogDetail, name='blog-detail'),
-    
+    path('services', services, name='services'),
 ]
