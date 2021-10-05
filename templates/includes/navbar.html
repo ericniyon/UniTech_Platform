@@ -9,14 +9,14 @@
             </a>
             <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse">
                 <ul class="navbar-nav navbar-center" id="mySidenav">
-                    <li class="nav-item active">
+                    <li class="{% if 'home' in request.path %} nav-item active {% endif %}">
                         <a href="{% url 'home' %}" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="{% if 'about-us' in request.path %} nav-item active {% endif %}">
                         <a href="{% url 'about-us' %}" class="nav-link">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a>
+                    <li class="{% if 'services' in request.path %} nav-item active {% endif %}">
+                        <a href="{% url 'services' %}" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="portfolio-two-column.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Portfolio</a>
@@ -32,7 +32,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="{% if 'blog-grid' in request.path %} nav-item active {% endif %}">
                         <a href="{% url 'blog-grid' %}" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item dropdown">
