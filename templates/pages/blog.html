@@ -1,0 +1,266 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="main-content">
+        <!-- BradCrumb header Start-->
+        <section class="inner-header-bg">          
+                <div class="container">
+                    <!-- Breadcrumb Start-->
+                        <div class="section-breadcrumb">
+                            <div class="container">                         
+                                <div class="row">               
+                                    <div class="col-md-12 justify-content-center align-self-center pb-2">
+                                        <div class="breadcrumb-content">
+                                            <div class="title-section">                                 
+                                                <h1 class="title text-center text-white">Blog Grid</h1>
+                                            </div>
+                                            <div class="breadcrumb-nav">
+                                                <ul class="breadcrumb-link text-center list-unstyled mb-0">
+                                                    <li class="text-white">
+                                                        <i class="mdi mdi-home theme-light-color pr-2"></i> 
+                                                        <a href="index.html">Home</a>
+                                                    </li>
+                                                    <li class="theme-light-color active">Blog</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Breadcrumb End -->
+                </div>
+        </section>
+        <!-- BradCrumb header End -->  
+        <!-- Blog Grid Section Start -->
+	 	<section class="section">
+	 		<div class="container">
+		 			<div class="blog-post-grid">
+		 				<div class="row">
+		 					<!-- Start Blog Item -->
+		 					<div class="col-md-6 col-lg-4">	 						
+		 						<div class="blog-item border mb-5">
+		 							<a href="#" class="blog-post-image">
+                                        <img src="{% static 'assets/images/blog/blog-01.jpg' %}" alt="blog-img" class="img-fluid w-100">     
+		 							</a>
+		 							<div class="blog-post-info">
+		 								<h4 class="blog-post-title">
+		 									<a href="#" class=" text-dark">Appropriately productize fully</a>
+		 								</h4>
+		 								<p>Lorem ipsum dolor sit amet,  adipiscing consectetur gravida elit</p>
+		 								<div class="post-event d-flex align-items-center">
+			 									<a href="#" class="blog-info-meta text-dark">June 10, 2020</a>
+			 									<a href="#" class="blog-category text-dark">Life Style</a>
+		 								</div>
+		 								<a href="{% url 'blog-detail' %}" class="blog-read-more">
+		 									<i class="mdi mdi-arrow-right"></i>
+		 								</a>
+		 							</div>
+		 						</div>	 						
+		 					</div>
+		 					<!-- End Blog Item -->
+		 					<!-- Start Blog Item -->
+		 					<div class="col-md-6 col-lg-4">	 						
+		 						<div class="blog-item border mb-5">
+		 							<a href="#" class="blog-post-image">
+                                        <img src="{% static 'assets/images/blog/blog-02.jpg' %}" alt="blog-img" class="img-fluid w-100">     
+		 							</a>
+		 							<div class="blog-post-info">
+		 								<h4 class="blog-post-title">
+		 									<a href="#" class=" text-dark">Quickly formulate backend</a>
+		 								</h4>
+		 								<p>Lorem ipsum dolor sit amet,  adipiscing consectetur gravida elit</p>
+		 								<div class="post-event d-flex align-items-center">
+			 									<a href="#" class="blog-info-meta text-dark">June 25, 2020</a>
+			 									<a href="#" class="blog-category text-dark">Life Style</a>
+		 								</div>
+		 								<a href="{% url 'blog-detail' %}" class="blog-read-more">
+		 									<i class="mdi mdi-arrow-right"></i>
+		 								</a>
+		 							</div>
+		 						</div>	 						
+		 					</div>
+		 					<!-- End Blog Item -->
+		 					<!-- Start Blog Item -->
+		 					<div class="col-md-6 col-lg-4">	 						
+		 						<div class="blog-item border mb-5">
+		 							<a href="#" class="blog-post-image">
+                                        <img src="{% static 'assets/images/blog/blog-03.jpg' %}" alt="blog-img" class="img-fluid w-100">     
+		 							</a>
+		 							<div class="blog-post-info">
+		 								<h4 class="blog-post-title">
+		 									<a href="#" class=" text-dark">Objectively extend extensive</a>
+		 								</h4>
+		 								<p>Lorem ipsum dolor sit amet,  adipiscing consectetur gravida elit</p>
+		 								<div class="post-event d-flex align-items-center">
+			 									<a href="#" class="blog-info-meta text-dark">May 10, 2020</a>
+			 									<a href="#" class="blog-category text-dark">Life Style</a>
+		 								</div>
+		 								<a href="{% url 'blog-detail' %}" class="blog-read-more">
+		 									<i class="mdi mdi-arrow-right"></i>
+		 								</a>
+		 							</div>
+		 						</div>	 						
+		 					</div>
+		 					<!-- End Blog Item -->
+		 					<!-- Start Blog Item -->
+		 					<div class="col-md-6 col-lg-4">	 						
+		 						<div class="blog-item border mb-5">
+		 							<a href="#" class="blog-post-image">
+                                        <img src="{% static 'assets/images/blog/blog-04.jpg' %}" alt="blog-img" class="img-fluid w-100">     
+		 							</a>
+		 							<div class="blog-post-info">
+		 								<h4 class="blog-post-title">
+		 									<a href="#" class=" text-dark">Appropriately re-engineer high</a>
+		 								</h4>
+		 								<p>Lorem ipsum dolor sit amet,  adipiscing consectetur gravida elit</p>
+		 								<div class="post-event d-flex align-items-center">
+			 									<a href="#" class="blog-info-meta text-dark">May 10, 2020</a>
+			 									<a href="#" class="blog-category text-dark">Life Style</a>
+		 								</div>
+		 								<a href="{% url 'blog-detail' %}" class="blog-read-more">
+		 									<i class="mdi mdi-arrow-right"></i>
+		 								</a>
+		 							</div>
+		 						</div>	 						
+		 					</div>
+		 					<!-- End Blog Item -->
+		 					<!-- Start Blog Item -->
+		 					<div class="col-md-6 col-lg-4">	 						
+		 						<div class="blog-item border mb-5">
+		 							<a href="#" class="blog-post-image">
+                                        <img src="{% static 'assets/images/blog/blog-05.jpg' %}" alt="blog-img" class="img-fluid w-100">     
+		 							</a>
+		 							<div class="blog-post-info">
+		 								<h4 class="blog-post-title">
+		 									<a href="#" class=" text-dark">Progressively visualize enabled</a>
+		 								</h4>
+		 								<p>Lorem ipsum dolor sit amet,  adipiscing consectetur gravida elit</p>
+		 								<div class="post-event d-flex align-items-center">
+			 									<a href="#" class="blog-info-meta text-dark">May 10, 2020</a>
+			 									<a href="#" class="blog-category text-dark">Life Style</a>
+		 								</div>
+		 								<a href="{% url 'blog-detail' %}" class="blog-read-more">
+		 									<i class="mdi mdi-arrow-right"></i>
+		 								</a>		 								
+		 							</div>
+		 						</div>	 						
+		 					</div>
+		 					<!-- End Blog Item -->
+		 					<!-- Start Blog Item -->
+		 					<div class="col-md-6 col-lg-4">	 						
+		 						<div class="blog-item border mb-5">
+		 							<a href="#" class="blog-post-image">
+                                        <img src="{% static 'assets/images/blog/blog-06.jpg' %}" alt="blog-img" class="img-fluid w-100">     
+		 							</a>
+		 							<div class="blog-post-info">
+		 								<h4 class="blog-post-title">
+		 									<a href="#" class=" text-dark">Credibly implement users</a>
+		 								</h4>
+		 								<p>Lorem ipsum dolor sit amet,  adipiscing consectetur gravida elit</p>
+		 								<div class="post-event d-flex align-items-center">
+			 									<a href="#" class="blog-info-meta text-dark">May 10, 2020</a>
+			 									<a href="#" class="blog-category text-dark">Life Style</a>
+		 								</div>
+		 								<a href="{% url 'blog-detail' %}" class="blog-read-more">
+		 									<i class="mdi mdi-arrow-right"></i>
+		 								</a>
+		 							</div>
+		 						</div>	 						
+		 					</div>
+		 					<!-- End Blog Item -->
+		 					<!-- Start Blog Item -->
+		 					<div class="col-md-6 col-lg-4">	 						
+		 						<div class="blog-item border mb-5">
+		 							<a href="#" class="blog-post-image">
+                                        <img src="{% static 'assets/images/blog/blog-07.jpg' %}" alt="blog-img" class="img-fluid w-100">     
+		 							</a>
+		 							<div class="blog-post-info">
+		 								<h4 class="blog-post-title">
+		 									<a href="#" class=" text-dark">Appropriately productize fully</a>
+		 								</h4>
+		 								<p>Lorem ipsum dolor sit amet,  adipiscing consectetur gravida elit</p>
+		 								<div class="post-event d-flex align-items-center">
+			 									<a href="#" class="blog-info-meta text-dark">June 10, 2020</a>
+			 									<a href="#" class="blog-category text-dark">Life Style</a>
+		 								</div>
+		 							</div>
+		 						</div>	 						
+		 					</div>
+		 					<!-- End Blog Item -->
+		 					<!-- Start Blog Item -->
+		 					<div class="col-md-6 col-lg-4">	 						
+		 						<div class="blog-item border mb-5">
+		 							<a href="#" class="blog-post-image">
+                                        <img src="{% static 'assets/images/blog/blog-08.jpg' %}" alt="blog-img" class="img-fluid w-100">     
+		 							</a>
+		 							<div class="blog-post-info">
+		 								<h4 class="blog-post-title">
+		 									<a href="#" class=" text-dark">Quickly formulate backend</a>
+		 								</h4>
+		 								<p>Lorem ipsum dolor sit amet,  adipiscing consectetur gravida elit</p>
+		 								<div class="d-flex align-items-center">
+			 									<a href="#" class="blog-info-meta text-dark">June 01, 2020</a>
+			 									<a href="#" class="blog-category text-dark">Life Style</a>
+		 								</div>
+		 								<a href="{% url 'blog-detail' %}" class="blog-read-more">
+		 									<i class="mdi mdi-arrow-right"></i>
+		 								</a>
+		 							</div>
+		 						</div>	 						
+		 					</div>
+		 					<!-- End Blog Item -->
+		 					<!-- Start Blog Item -->
+		 					<div class="col-md-6 col-lg-4">	 						
+		 						<div class="blog-item border mb-5">
+		 							<a href="#" class="blog-post-image">
+                                        <img src="{% static 'assets/images/blog/blog-01.jpg' %}" alt="blog-img" class="img-fluid w-100">     
+		 							</a>
+		 							<div class="blog-post-info">
+		 								<h4 class="blog-post-title">
+		 									<a href="#" class=" text-dark">Objectively extend extensive</a>
+		 								</h4>
+		 								<p>Lorem ipsum dolor sit amet,  adipiscing consectetur gravida elit</p>
+		 								<div class="post-event d-flex align-items-center">
+			 									<a href="#" class="blog-info-meta text-dark">May 10, 2020</a>
+			 									<a href="#" class="blog-category text-dark">Life Style</a>
+		 								</div>
+		 								<a href="{% url 'blog-detail' %}" class="blog-read-more">
+		 									<i class="mdi mdi-arrow-right"></i>
+		 								</a>
+		 							</div>
+		 						</div>	 						
+		 					</div>
+		 					<!-- End Blog Item -->
+		 				</div>
+		 			</div>
+		 			<div class="pagination  d-flex justify-content-center mt-lg-5">
+		 				<ul class="pagination mb-0">
+					        <li class="page-item text-center">
+					            <a href="#" class="page-link rounded-0">
+					                <i class="mdi mdi-chevron-left"></i>
+					            </a>
+					        </li>
+					        <li class="page-item text-center active">
+					            <a href="#" class="page-link rounded-0">1</a>
+					        </li>
+					         <li class="page-item text-center">
+					            <a href="#" class="page-link rounded-0">2</a>
+					        </li>
+					        <li class="page-item text-center">
+					            <a href="#" class="page-link rounded-0">3</a>
+					        </li>
+					        <li class="page-item text-center">
+					            <a href="#" class="page-link rounded-0">
+					                <i class="mdi mdi-chevron-right"></i>
+					            </a>
+					        </li>
+					    </ul>
+		 			</div>
+	 		</div>
+	 	</section>
+ 	<!-- Blog Grid Section End -->    
+    </div>
+
+{% endblock %}
